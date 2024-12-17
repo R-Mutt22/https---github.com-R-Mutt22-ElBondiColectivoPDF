@@ -1,14 +1,25 @@
 ---
+import "../styles/global.css";
+
+const pageTitle = "Blog";
 ---
 <html lang="es">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+    <style>
+			h1 {
+			  color: purple;
+			  font-size: 4rem;
+			}
+		  </style>
   </head>
   <body>
     <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
+    <a href="/about/">Sobre nosotros</a>
     <a href="/blog/">Blog</a>
 
     <h1>Mi blog de aprendizaje sobre Astro</h1>
